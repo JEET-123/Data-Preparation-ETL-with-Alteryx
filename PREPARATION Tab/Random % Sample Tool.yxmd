@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.1">
+  <Nodes>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="78" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\kousdutta\Desktop\ETL-Alteryx Training for Data Analytics\Alteryx Material\Alteryx Data Files\Section 3\Section 3 - Preparation.xlsx|||`3.14 RANDOM % SAMPLE$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Section 3 - Preparation.xlsx
+Query=`3.14 RANDOM % SAMPLE$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Row ID" source="File: C:\Users\kousdutta\Desktop\ETL-Alteryx Training for Data Analytics\Alteryx Material\Alteryx Data Files\Section 3\Section 3 - Preparation.xlsx|||`3.14 RANDOM % SAMPLE$`" type="Double" />
+            <Field name="Order ID" size="255" source="File: C:\Users\kousdutta\Desktop\ETL-Alteryx Training for Data Analytics\Alteryx Material\Alteryx Data Files\Section 3\Section 3 - Preparation.xlsx|||`3.14 RANDOM % SAMPLE$`" type="V_String" />
+            <Field name="Order Date" source="File: C:\Users\kousdutta\Desktop\ETL-Alteryx Training for Data Analytics\Alteryx Material\Alteryx Data Files\Section 3\Section 3 - Preparation.xlsx|||`3.14 RANDOM % SAMPLE$`" type="Date" />
+            <Field name="Ship Date" source="File: C:\Users\kousdutta\Desktop\ETL-Alteryx Training for Data Analytics\Alteryx Material\Alteryx Data Files\Section 3\Section 3 - Preparation.xlsx|||`3.14 RANDOM % SAMPLE$`" type="Date" />
+            <Field name="Ship Mode" size="255" source="File: C:\Users\kousdutta\Desktop\ETL-Alteryx Training for Data Analytics\Alteryx Material\Alteryx Data Files\Section 3\Section 3 - Preparation.xlsx|||`3.14 RANDOM % SAMPLE$`" type="V_String" />
+            <Field name="Customer ID" size="255" source="File: C:\Users\kousdutta\Desktop\ETL-Alteryx Training for Data Analytics\Alteryx Material\Alteryx Data Files\Section 3\Section 3 - Preparation.xlsx|||`3.14 RANDOM % SAMPLE$`" type="V_String" />
+            <Field name="Customer Name" size="255" source="File: C:\Users\kousdutta\Desktop\ETL-Alteryx Training for Data Analytics\Alteryx Material\Alteryx Data Files\Section 3\Section 3 - Preparation.xlsx|||`3.14 RANDOM % SAMPLE$`" type="V_String" />
+            <Field name="Segment" size="255" source="File: C:\Users\kousdutta\Desktop\ETL-Alteryx Training for Data Analytics\Alteryx Material\Alteryx Data Files\Section 3\Section 3 - Preparation.xlsx|||`3.14 RANDOM % SAMPLE$`" type="V_String" />
+            <Field name="Country/Region" size="255" source="File: C:\Users\kousdutta\Desktop\ETL-Alteryx Training for Data Analytics\Alteryx Material\Alteryx Data Files\Section 3\Section 3 - Preparation.xlsx|||`3.14 RANDOM % SAMPLE$`" type="V_String" />
+            <Field name="City" size="255" source="File: C:\Users\kousdutta\Desktop\ETL-Alteryx Training for Data Analytics\Alteryx Material\Alteryx Data Files\Section 3\Section 3 - Preparation.xlsx|||`3.14 RANDOM % SAMPLE$`" type="V_String" />
+            <Field name="State" size="255" source="File: C:\Users\kousdutta\Desktop\ETL-Alteryx Training for Data Analytics\Alteryx Material\Alteryx Data Files\Section 3\Section 3 - Preparation.xlsx|||`3.14 RANDOM % SAMPLE$`" type="V_String" />
+            <Field name="Postal Code" source="File: C:\Users\kousdutta\Desktop\ETL-Alteryx Training for Data Analytics\Alteryx Material\Alteryx Data Files\Section 3\Section 3 - Preparation.xlsx|||`3.14 RANDOM % SAMPLE$`" type="Double" />
+            <Field name="Region" size="255" source="File: C:\Users\kousdutta\Desktop\ETL-Alteryx Training for Data Analytics\Alteryx Material\Alteryx Data Files\Section 3\Section 3 - Preparation.xlsx|||`3.14 RANDOM % SAMPLE$`" type="V_String" />
+            <Field name="Product ID" size="255" source="File: C:\Users\kousdutta\Desktop\ETL-Alteryx Training for Data Analytics\Alteryx Material\Alteryx Data Files\Section 3\Section 3 - Preparation.xlsx|||`3.14 RANDOM % SAMPLE$`" type="V_String" />
+            <Field name="Category" size="255" source="File: C:\Users\kousdutta\Desktop\ETL-Alteryx Training for Data Analytics\Alteryx Material\Alteryx Data Files\Section 3\Section 3 - Preparation.xlsx|||`3.14 RANDOM % SAMPLE$`" type="V_String" />
+            <Field name="Sub-Category" size="255" source="File: C:\Users\kousdutta\Desktop\ETL-Alteryx Training for Data Analytics\Alteryx Material\Alteryx Data Files\Section 3\Section 3 - Preparation.xlsx|||`3.14 RANDOM % SAMPLE$`" type="V_String" />
+            <Field name="Product Name" size="255" source="File: C:\Users\kousdutta\Desktop\ETL-Alteryx Training for Data Analytics\Alteryx Material\Alteryx Data Files\Section 3\Section 3 - Preparation.xlsx|||`3.14 RANDOM % SAMPLE$`" type="V_WString" />
+            <Field name="Sales" source="File: C:\Users\kousdutta\Desktop\ETL-Alteryx Training for Data Analytics\Alteryx Material\Alteryx Data Files\Section 3\Section 3 - Preparation.xlsx|||`3.14 RANDOM % SAMPLE$`" type="Double" />
+            <Field name="Quantity" source="File: C:\Users\kousdutta\Desktop\ETL-Alteryx Training for Data Analytics\Alteryx Material\Alteryx Data Files\Section 3\Section 3 - Preparation.xlsx|||`3.14 RANDOM % SAMPLE$`" type="Double" />
+            <Field name="Discount" source="File: C:\Users\kousdutta\Desktop\ETL-Alteryx Training for Data Analytics\Alteryx Material\Alteryx Data Files\Section 3\Section 3 - Preparation.xlsx|||`3.14 RANDOM % SAMPLE$`" type="Double" />
+            <Field name="Profit" source="File: C:\Users\kousdutta\Desktop\ETL-Alteryx Training for Data Analytics\Alteryx Material\Alteryx Data Files\Section 3\Section 3 - Preparation.xlsx|||`3.14 RANDOM % SAMPLE$`" type="Double" />
+            <Field name="F22" source="File: C:\Users\kousdutta\Desktop\ETL-Alteryx Training for Data Analytics\Alteryx Material\Alteryx Data Files\Section 3\Section 3 - Preparation.xlsx|||`3.14 RANDOM % SAMPLE$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings>
+        <Position x="198" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Number">False</Value>
+          <Value name="NNumber">1000</Value>
+          <Value name="Percent">True</Value>
+          <Value name="NPercent">5</Value>
+          <Value name="Deterministic">False</Value>
+          <Value name="Seed">458676342</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="RandomRecords.yxmc" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Random % Sample Tool</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.1">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="30" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">C:\Users\kousdutta\Desktop\ETL-Alteryx Training for Data Analytics\Alteryx Material\Alteryx Data Files\Section 6\6.3 CROSSTAB.xlsx|||`Ex1$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>6.3 CROSSTAB.xlsx
+Query=`Ex1$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Product" size="255" source="File: C:\Users\kousdutta\Desktop\ETL-Alteryx Training for Data Analytics\Alteryx Material\Alteryx Data Files\Section 6\6.3 CROSSTAB.xlsx|||`Ex1$`" type="V_String" />
+            <Field name="Category" size="255" source="File: C:\Users\kousdutta\Desktop\ETL-Alteryx Training for Data Analytics\Alteryx Material\Alteryx Data Files\Section 6\6.3 CROSSTAB.xlsx|||`Ex1$`" type="V_String" />
+            <Field name="Suggested Age Range" size="255" source="File: C:\Users\kousdutta\Desktop\ETL-Alteryx Training for Data Analytics\Alteryx Material\Alteryx Data Files\Section 6\6.3 CROSSTAB.xlsx|||`Ex1$`" type="V_String" />
+            <Field name="Average Monthly Sales" source="File: C:\Users\kousdutta\Desktop\ETL-Alteryx Training for Data Analytics\Alteryx Material\Alteryx Data Files\Section 6\6.3 CROSSTAB.xlsx|||`Ex1$`" type="Double" />
+            <Field name="Name" size="255" source="File: C:\Users\kousdutta\Desktop\ETL-Alteryx Training for Data Analytics\Alteryx Material\Alteryx Data Files\Section 6\6.3 CROSSTAB.xlsx|||`Ex1$`" type="V_String" />
+            <Field name="Value" source="File: C:\Users\kousdutta\Desktop\ETL-Alteryx Training for Data Analytics\Alteryx Material\Alteryx Data Files\Section 6\6.3 CROSSTAB.xlsx|||`Ex1$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+        <Position x="174" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields>
+            <Field field="Product" />
+            <Field field="Category" />
+            <Field field="Suggested Age Range" />
+            <Field field="Average Monthly Sales" />
+          </GroupFields>
+          <HeaderField field="Name" />
+          <DataField field="Value" />
+          <Methods>
+            <Method method="Sum" />
+          </Methods>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Product" size="255" source="CrossTab:Group:Sum:" type="V_String" />
+            <Field name="Category" size="255" source="CrossTab:Group:Sum:" type="V_String" />
+            <Field name="Suggested Age Range" size="255" source="CrossTab:Group:Sum:" type="V_String" />
+            <Field name="Average Monthly Sales" source="CrossTab:Group:Sum:" type="Double" />
+            <Field name="April" source="CrossTab:Header:Name:April:Sum:" type="Double" />
+            <Field name="August" source="CrossTab:Header:Name:August:Sum:" type="Double" />
+            <Field name="December" source="CrossTab:Header:Name:December:Sum:" type="Double" />
+            <Field name="February" source="CrossTab:Header:Name:February:Sum:" type="Double" />
+            <Field name="January" source="CrossTab:Header:Name:January:Sum:" type="Double" />
+            <Field name="July" source="CrossTab:Header:Name:July:Sum:" type="Double" />
+            <Field name="June" source="CrossTab:Header:Name:June:Sum:" type="Double" />
+            <Field name="March" source="CrossTab:Header:Name:March:Sum:" type="Double" />
+            <Field name="May" source="CrossTab:Header:Name:May:Sum:" type="Double" />
+            <Field name="November" source="CrossTab:Header:Name:November:Sum:" type="Double" />
+            <Field name="October" source="CrossTab:Header:Name:October:Sum:" type="Double" />
+            <Field name="September" source="CrossTab:Header:Name:September:Sum:" type="Double" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Product" order="Asc" />
+            <Field field="Category" order="Asc" />
+            <Field field="Suggested Age Range" order="Asc" />
+            <Field field="Average Monthly Sales" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Cross Tab - Pivotting Tool 1</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
